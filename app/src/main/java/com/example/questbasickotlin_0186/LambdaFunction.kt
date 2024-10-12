@@ -8,3 +8,10 @@ package com.example.questbasickotlin_0186
 fun uppercaseString(string: String): String {
     return string.uppercase()
 }
+
+//dapat ditulis dalam ekspresi lamda sbb :
+fun main() {
+    uppercaseString("hello")
+    println({ string: String -> string.uppercase() } ("hello"))
+    //hello
+}
