@@ -22,4 +22,20 @@ fun nullSafety(){
     // safe call operator
     println(neverNull.length) // 18
     println(nullable?.length) // null
+
+    // notNull dosen't accept null values
+    fun strLength(notNull: String): Int {
+        return notNull.length
+    }
+    println(strLength(neverNull)) // 18
 }
+
+fun main() {
+    nullSafety()
+}
+
+
+
+
+
+
