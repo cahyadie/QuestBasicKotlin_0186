@@ -34,6 +34,6 @@ fun witReturn(panjang : Int, lebar : Int) {
 fun main(){
     withoutParameter()
     withParameter("Jhon")
-    withNamedArgument(name = "John. age = 30")
+    withNamedArgument(name = "John", age = 30)
     withDefaultParameter(age = 25)
 }
