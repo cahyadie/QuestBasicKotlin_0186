@@ -26,3 +26,28 @@ fun contohlist() {
     val shapeLocked: List<String> = shape
     println(shapeLocked)
 }
+
+fun ContohSet() {
+    println()
+    println("=== Set ===")
+
+    // Set Mutable
+    val readOnlyAbjad = setOf("A", "B", "C")
+    println(readOnlyAbjad)
+
+    // set Mutable
+    val shape: MutableSet<String> = mutableSetOf("Circle", "Square", "Triangle")
+    println(shape)
+
+    //Menambahkan data ke dalam set Mutable
+    shape.add("Rectangle")
+    println(shape)
+
+    // Menghapus data dari set Mutable
+    shape.remove("Circle")
+    println(shape)
+
+    // Set Read-Only
+    val shapeLocked: Set<String> = shape
+    println(shapeLocked)
+}
